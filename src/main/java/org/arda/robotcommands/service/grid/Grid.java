@@ -63,7 +63,7 @@ public class Grid {
             return true;
         }
 
-        throw new OutOfBoundsException("Robot is out of bounds.");
+        throw new OutOfBoundsException("Robot cannot be positioned or move out of bounds.");
     }
 
 
