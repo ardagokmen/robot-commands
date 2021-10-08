@@ -1,5 +1,6 @@
 package org.arda.robotcommands.service.grid;
 
+import org.arda.robotcommands.constants.Constants;
 import org.arda.robotcommands.enums.Direction;
 
 public class Robot {
@@ -9,8 +10,8 @@ public class Robot {
     private Direction direction;
 
     public Robot(){
-        this.x = 0;
-        this.y = 0;
+        this.x = Constants.INITIAL_X;
+        this.y = Constants.INITIAL_Y;
         this.direction = Direction.EAST;
     }
 

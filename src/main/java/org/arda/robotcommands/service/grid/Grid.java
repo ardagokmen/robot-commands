@@ -6,13 +6,13 @@ import org.arda.robotcommands.exceptions.OutOfBoundsException;
 
 public class Grid {
 
-    private final int heightIndex;
-    private final int widthIndex;
+    private final int height;
+    private final int width;
     private final Robot robot;
 
-    public Grid(int heightIndex, int widthIndex){
-        this.heightIndex = heightIndex;
-        this.widthIndex = widthIndex;
+    public Grid(int height, int width){
+        this.height = height - 1;
+        this.width = width - 1;
         this.robot = new Robot();
     }
 
@@ -59,7 +59,7 @@ public class Grid {
     }
 
     private boolean isInBounds(int x, int y){
-        if(0 <= x && x <= heightIndex && 0<= widthIndex && y <= widthIndex){
+        if(0 <= x && x <= height && 0<= width && y <= width){
             return true;
         }
 
